@@ -4,7 +4,7 @@ import Comment from "./Comment";
 const CommentList = () => {
   return (
     <div>
-      <Comment name="" comment="" />
+      <Comment name="dasf" comment="asdf" />
     </div>
   );
 };
