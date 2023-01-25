@@ -1,5 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { ThemeProvider } from "@material-tailwind/react";
+import "./tailwind.css";
 import CommentList from "./chapter_05/CommentList";
 
 const root = ReactDOM.createRoot(
@@ -7,6 +9,8 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <CommentList />
+    <ThemeProvider>
+      <CommentList />
+    </ThemeProvider>
   </React.StrictMode>
 );
