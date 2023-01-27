@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Alert } from "@material-tailwind/react";
 
 export interface NotificationProps {
+  id: number;
   message: string;
 }
 
@@ -10,6 +11,18 @@ class Notification extends Component<NotificationProps> {
     super(props);
 
     this.state = {};
+  }
+
+  componentDidMount() {
+    console.log(`${this.props.id} componentDidMount() called.`);
+  }
+
+  componentDidUpdate() {
+    console.log(`${this.props.id} componentDidUpdate() called.`);
+  }
+
+  componentWillUnmount() {
+    console.log(`${this.props.id} componentWillUnmount() called.`);
   }
 
   render() {
