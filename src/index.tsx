@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "@material-tailwind/react";
 import "./tailwind.css";
 
-import Accommodate from "./chapter_07/Accommodate";
+import ConfirmButton from "./chapter_08/ConfirmButton";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <Accommodate />
+      <ConfirmButton />
     </ThemeProvider>
   </React.StrictMode>
 );
