@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "@material-tailwind/react";
 import "./tailwind.css";
 
-import ConfirmButton from "./chapter_08/ConfirmButton";
+import LandingPage from "./chapter_09/LandingPage";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <ConfirmButton />
+      <LandingPage />
     </ThemeProvider>
   </React.StrictMode>
 );
