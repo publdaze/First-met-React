@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "@material-tailwind/react";
 import "./tailwind.css";
 
-import LandingPage from "./chapter_09/LandingPage";
+import AttendanceBook from "./chapter_10/AttendanceBook";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <LandingPage />
+      <AttendanceBook />
     </ThemeProvider>
   </React.StrictMode>
 );
