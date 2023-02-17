@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "@material-tailwind/react";
 import "./tailwind.css";
 
-import SignUp from "./chapter_11/SignUp";
+import Calculator from "./chapter_12/Calculator";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <SignUp />
+      <Calculator />
     </ThemeProvider>
   </React.StrictMode>
 );
