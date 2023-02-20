@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Button, Input, Option, Select } from "@material-tailwind/react";
+import React, { useReducer, useState } from "react";
+import { Alert, Button, Input, Option, Select } from "@material-tailwind/react";
 
 function SignUp() {
   const genderList = [
@@ -8,6 +8,7 @@ function SignUp() {
   ];
   const [name, setName] = useState("");
   const [gender, setGender] = useState("남자");
+  const [isAlertVisible, setIsAlertVisible] = useState(false);
 
   const handleChangeName = (event: React.ChangeEvent<HTMLInputElement>) => {
     setName(event.target.value);
@@ -19,8 +20,11 @@ function SignUp() {
   };
 
   const handleSubmit = (event: any) => {
-    alert(`이름: ${name}, 성별: ${gender}`);
     event.preventDefault();
+    setIsAlertVisible(true);
+    setTimeout(() => {
+      setIsAlertVisible(false);
+    }, 5000);
   };
 
   return (
@@ -39,6 +43,9 @@ function SignUp() {
         ))}
       </Select>
       <Button type="submit">제출</Button>
+      {isAlertVisible && (
+        <Alert color="blue-gray">{`이름 : ${name} 성별 : ${gender}`}</Alert>
+      )}
     </form>
   );
 }
