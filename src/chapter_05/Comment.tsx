@@ -1,5 +1,6 @@
 import React from "react";
-import { Avatar, Card, CardBody, Typography } from "@material-tailwind/react";
+import { Card, CardBody, Typography } from "@material-tailwind/react";
+import Avatar from "boring-avatars";
 
 interface CommentProps {
   name: string;
@@ -9,16 +10,17 @@ interface CommentProps {
 const Comment = ({ name, comment }: CommentProps) => {
   return (
     <Card className="m-5">
-      <CardBody className="flex">
+      <CardBody className="flex items-center space-x-3">
         <Avatar
-          src="https://upload.wikimedia.org/wikipedia/commons/8/89/Portrait_Placeholder.png?20170328184010"
-          alt="avatar"
-          variant="circular"
-          className="mr-3"
+          name={name}
+          variant="beam"
+          colors={["#92A1C6", "#146A7C", "#F0AB3D", "#C271B4", "#C20D90"]}
         />
         <div>
           <Typography variant="h6">{name}</Typography>
-          <Typography variant="paragraph">{comment}</Typography>
+          <Typography className="font-normal" variant="paragraph">
+            {comment}
+          </Typography>
         </div>
       </CardBody>
     </Card>
