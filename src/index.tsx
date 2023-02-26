@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import { ThemeProvider } from "@material-tailwind/react";
 import "./tailwind.css";
 
-import ProfileCard from "./chapter_13/ProfileCard";
+import DarkOrLight from "./chapter_14/DarkOrLight";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -11,9 +11,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <ThemeProvider>
-      <div className="m-20">
-        <ProfileCard />
-      </div>
+      <DarkOrLight />
     </ThemeProvider>
   </React.StrictMode>
 );
