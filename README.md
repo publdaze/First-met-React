@@ -1,5 +1,6 @@
 # First-met-React
-처음 만난 리액트 강의 실습을 typeScript와 tailwind를 사용하여 진행하는 레포입니다. (chapter05~)
+[처음 만난 리액트 강의 실습](https://github.com/soaple/first-met-react-practice-v18)을 typeScript와 tailwind를 사용하여 진행하는 레포입니다. (chapter05~)
+
 <br /><br />
 
 ## chapter 5. Components and Props / 댓글 컴포넌트 만들기
